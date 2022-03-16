@@ -14,3 +14,9 @@ Go to the project directory
 Install dependencies
 
       npm install
+      
+Use alpine.js In Project : https://alpinejs.dev/
+
+## 1- radio Group
+
+![Screenshot from 2022-03-16 21-33-47](https://user-images.githubusercontent.com/91375726/158657737-8d2c632f-a8ba-4591-a042-9b5ca09f5dda.png)
