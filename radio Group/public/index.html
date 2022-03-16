@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ratio Group</title>
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <script src="https://kit.fontawesome.com/ebda61e3fa.js" crossorigin="anonymous"></script>
+    
+</head>
+<body class="w-full h-screen bg-blue-500 flex items-center justify-center">
+    
+    <section x-data="{ratio : 1 , active : 'ring-4 ring-slate-300 bg-sky-700 text-white'}" class="flex flex-col gap-4">
+        <div @click="ratio = 1" :class="ratio === 1 ? active : '' " class="flex justify-between items-center p-6 rounded-xl w-96 md:w-[600px] cursor-pointer bg-white">
+            <div>
+                <h3>Startup</h3>
+                <p class="text-sm">12 GB / 6 CPUS . 160 GB SSD disk</p>
+            </div>
+            <div>
+                <span x-show="ratio === 1" class="text-white p-2 rounded-full bg-slate-400 fa fa-check"></span>
+            </div>
+        </div>
+        <div @click="ratio = 2" :class="ratio === 2 ? active : '' " class="flex justify-between items-center p-6 rounded-xl bg-white w-96 md:w-[600px] cursor-pointer ">
+            <div>
+                <h3>Startup</h3>
+                <p class="text-sm">12 GB / 6 CPUS . 160 GB SSD disk</p>
+            </div>
+            <div>
+                <span x-show="ratio === 2" class="text-white p-2 rounded-full bg-slate-400 fa fa-check"></span>
+            </div>
+        </div>
+        <div @click="ratio = 3" :class="ratio === 3 ? active : '' " class="flex justify-between items-center p-6 rounded-xl bg-white w-96 md:w-[600px] cursor-pointer ">
+            <div>
+                <h3>Startup</h3>
+                <p class="text-sm">12 GB / 6 CPUS . 160 GB SSD disk</p>
+            </div>
+            <div>
+                <span x-show="ratio === 3" class="text-white p-2 rounded-full bg-slate-400 fa fa-check"></span>
+            </div>
+        </div>
+    </section>
+    <script src="//unpkg.com/alpinejs" defer></script>
+</body>
+</html>
