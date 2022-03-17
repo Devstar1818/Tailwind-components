@@ -17,7 +17,7 @@ Install dependencies
       
 Use alpine.js In Project : https://alpinejs.dev/
 <br/>
-Icons whit Font Awesome and Heroicons : https://heroicons.com/
+Icons with Font Awesome and Heroicons : https://heroicons.com/
 
 ## 1- radio Group
 
