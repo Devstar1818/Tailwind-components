@@ -1,5 +1,7 @@
 ## Tailwind-components
 
+*UI components with Tailwind CSS in [headlessui.dev](https://headlessui.dev/)*
+
 #### Run
 
 Clone the project
@@ -26,3 +28,8 @@ Icons with Font Awesome and Heroicons : https://heroicons.com/
 ## 2- Tabs
 
 ![Screenshot from 2022-03-17 11-22-04](https://user-images.githubusercontent.com/91375726/158762602-1c541454-ac91-4456-87ad-6f9bd0dcd9dd.png)
+
+## 3- Listbox
+
+![Screenshot from 2022-03-18 09-04-34](https://user-images.githubusercontent.com/91375726/158943865-1833152c-7274-4b9f-9438-e5437b997c02.png)
+
