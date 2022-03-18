@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind project</title>
+    <link rel="stylesheet" href="./build/tailwind.css">
+</head>
+
+<body x-data="{open : false}"  class="w-full h-screen flex justify-center bg-amber-500">
+    <div class="flex items-center gap-y-2 flex-col w-[400px] mt-28 z-10">
+        <div @click="open = !open" class="flex w-full justify-between items-center bg-white rounded px-3 py-1">
+            <span class="mainInputContent">Mohammad</span>
+            <div class="flex flex-col items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-gray-100" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-gray-100" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+        </div>
+        <div x-data="{select : 1}" x-show="open === true" class="flex flex-col items-center bg-white rounded overflow-hidden w-full">
+            <div @click="select = 1 , open = false" class="selectAction flex items-center gap-x-2 p-3 w-full cursor-pointer bg-white hover:bg-amber-100 hover:text-amber-800">
+                <span class="w-1/12">
+                    <svg x-show="select === 1" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                </span>
+                <span>Mohammad</span>
+            </div>
+            <div @click="select = 2 , open = false" class="selectAction flex items-center gap-x-2 p-3 w-full cursor-pointer bg-white hover:bg-amber-100 hover:text-amber-800">
+                <span class="w-1/12">
+                    <svg x-show="select === 2" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                </span>
+                <span>Ali</span>
+            </div>
+            <div @click="select = 3 , open = false" class="selectAction flex items-center gap-x-2 p-3 w-full cursor-pointer bg-white hover:bg-amber-100 hover:text-amber-800">
+                <span class="w-1/12">
+                    <svg x-show="select === 3" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                </span>
+                <span>Hasan</span>
+            </div>
+            <div @click="select = 4 , open = false" class="selectAction flex items-center gap-x-2 p-3 w-full cursor-pointer bg-white hover:bg-amber-100 hover:text-amber-800">
+                <span class="w-1/12">
+                    <svg x-show="select === 4" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                </span>
+                <span>Babak</span>
+            </div>
+            <div @click="select = 5 , open = false" class="selectAction flex items-center gap-x-2 p-3 w-full cursor-pointer bg-white hover:bg-amber-100 hover:text-amber-800">
+                <span class="w-1/12">
+                    <svg x-show="select === 5" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                </span>
+                <span>Zahra</span>
+            </div>
+            <div @click="select = 6 , open = false" class="selectAction flex items-center gap-x-2 p-3 w-full cursor-pointer bg-white hover:bg-amber-100 hover:text-amber-800">
+                <span class="w-1/12">
+                    <svg x-show="select === 6" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                </span>
+                <span>Hamed</span>
+            </div>
+        </div>
+    </div>
+    <button x-show="open === true" @click="open = false" class="w-full h-full fixed top-0 left-0"></button>
+    <script src="./js/alpine.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
