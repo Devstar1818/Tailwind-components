@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ratio Group</title>
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <script src="https://kit.fontawesome.com/ebda61e3fa.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="w-full h-screen bg-fuchsia-600 flex items-center justify-center">
+    <div class="bg-white w-96 md:w-[500px] flex flex-col justify-center rounded-2xl p-2 gap-2">
+        <div x-data="{drop1 : false}">
+            <div
+                @click="drop1 = !drop1" class="w-full flex justify-between items-center bg-fuchsia-100 hover:bg-fuchsia-200 rounded-2xl py-2 px-4 cursor-pointer text-purple-800">
+                <p>What is your refund policy?</p>
+                <span x-show="!drop1" class="fas fa-angle-up text-lg"></span>
+                <span x-show="drop1" class="fas fa-angle-down text-lg"></span>
+            </div>
+            <div x-show="drop1" class="p-4 text-gray-500">If you're unhappy with your purchase for any reason, email us
+                within 90 days and we'll refund you in full, no questions asked.</div>
+        </div>
+        <div x-data="{drop2 : false}">
+            <div
+                @click="drop2 = !drop2" class="w-full flex justify-between items-center bg-fuchsia-100 hover:bg-fuchsia-200 rounded-2xl py-2 px-4 cursor-pointer text-purple-800">
+                <p>Do you offer technical support?</p>
+                <span x-show="!drop2" class="fas fa-angle-up text-lg"></span>
+                <span x-show="drop2" class="fas fa-angle-down text-lg"></span>
+            </div>
+            <div x-show="drop2" class="p-4 text-gray-500">No</div>
+        </div>
+    </div>
+    <script src="./js/alpine.js" defer></script>
+</body>
+
+</html>
