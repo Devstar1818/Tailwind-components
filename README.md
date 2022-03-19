@@ -33,3 +33,7 @@ Icons with Font Awesome and Heroicons : https://heroicons.com/
 
 ![Screenshot from 2022-03-18 09-04-34](https://user-images.githubusercontent.com/91375726/158943865-1833152c-7274-4b9f-9438-e5437b997c02.png)
 
+## 4- Disclosure
+
+![Screenshot from 2022-03-19 14-47-50](https://user-images.githubusercontent.com/91375726/159119048-6f9dc875-8620-4860-bb64-fb2b21134687.png)
+
