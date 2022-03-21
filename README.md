@@ -37,3 +37,8 @@ Icons with Font Awesome and Heroicons : https://heroicons.com/
 
 ![Screenshot from 2022-03-19 14-47-50](https://user-images.githubusercontent.com/91375726/159119048-6f9dc875-8620-4860-bb64-fb2b21134687.png)
 
+## 5- Toggle
+
+![Screenshot from 2022-03-21 15-22-55](https://user-images.githubusercontent.com/91375726/159256216-6b8fc026-7baa-48dd-ba17-1db2cfed9802.png)
+
+
